@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-const port = process.env.PORT || 3001;
+
 
 
 app.use(express.json());
@@ -32,6 +32,6 @@ app.post('/comidas', (req, res) => {
     res.status(201).json(comida);
 });
 
-app.listen(port, () => {
-    console.log(`Servidor rodando na porta ${port}`);
+app.listen(3000, () => {
+    console.log(`Servidor rodando na porta 3000`);
 });
